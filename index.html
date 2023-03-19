@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>site for stuf </title>
+    <link rel="stylesheet" href="indexpassword.css">
+</head>
+
+<body>
+    <h1>Password Practice! </h1>
+
+    <p> Please enter password to view the website:</p>
+    <p> Password: <input id="passwordBox" type="password" />
+        <a href="app.html" onclick="return confirmPassword();">
+            Click Here to Enter Website!
+    </p>
+
+    <script>
+        function confirmPassword() {
+            var password = document.getElementById("passwordBox");
+            var passwordText = password.value;
+            if (passwordText == "noah") {
+                return true;
+            }
+            alert("Access denied! wrong password gooyf");
+            return false;
+        }
+    </script>
+</body>
+
+</html>
