@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<!-- Head section -->
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>list</title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1894.6">
+
+  <!-- CSS Style section -->
+  <style type="text/css">
+
+  Body {
+    background-color: lightcyan;
+    font-size: 20pt;
+  }
+
+  input[type="button"] {
+    background-color: cadetblue;
+  }
+
+  nav {
+    background-color: cadetblue;
+    font-size: 15pt;
+  }
+
+  p {
+    color: black;
+    border: 2px dotted black;
+  }
+  </style>  
+</head>
+
+<!-- Body Section-->
+<body>
+<a href="aboutnoah.html">noahs about me</a>
+<a href="aboutsean.html">sean about me</a>
+<a href="refren.html">zaria about me</a>
+  <a href="contactus.html">contact us here</a>
+
+
+
+  
+  <h1> Special To Do list</h1> 
+  <br>
+  <input type="text" id="box" value="Type here to add task"/>
+  <br>
+  <input type="button" value="Add Item" onclick="addItem();"/>
+  <br>
+  <div id="list"></div>
+
+  <iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreenf
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDlAmY4-CBJkuEpGVEWqd1Iiv9uGOvXbI&q=Atomic+Bomb+Dome,Hiroshima+Japan">
+  </iframe>
+  <p>Cultural values of Japan are very important to Japanese social interaction. The three most valued cultural values in Japan
+    are harmony, order, and self-development. They are also a country with a vibrant "matsuri" culture, which is Japanese for festivals.
+    Some popular foods in Japan include sushi, miso soup, udon, takoyaki, soba, and sukiyaki.
+  </p>
+  <br>
+
+  <iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreenf
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDlAmY4-CBJkuEpGVEWqd1Iiv9uGOvXbI&q=Effiel+Tower,Paris+France">
+  </iframe>
+  <p>Paris has many foods that are very popular worldwide including: the baguette, the macaron, the crossiant, and escargots.
+    Their culture is commonly associated with Paris, and it is the center of fashion, cuisine, art, and architecture. However,
+    the life outside the City of Lights is different and varies from different regions.
+  </p>
+  <br>
+
+  <iframe
+  width="600"
+  height="450"
+  style="border:0"
+  loading="lazy"
+  allowfullscreenf
+  referrerpolicy="no-referrer-when-downgrade"
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBDlAmY4-CBJkuEpGVEWqd1Iiv9uGOvXbI&q=SEA+of+SPACE,Portland+Maine">
+  </iframe>
+<p>Maine's culture is thousand of years old and millions of memories deep. It grew to include people and practices from
+  Europe, Africa, and Asia. In Portland, they have many travelers from California and people who love indie and punk music.
+  They are LGBTQ-friendly and love anything punk. Portland's most popular food are muffins, pastries, whoopie pie, and 
+  blueberry pie.
+</p>
+
+<!-- Javascript Section: HTML Comment type-->
+<script>
+// JavaScript comment
+// NOTE: Comment syntax changes here! We are in javascript now
+
+// addItem function:
+//  This will add an item to the list of tasks
+function addItem() {
+  var newItem = document.createElement("div");
+  newItem.innerHTML = document.getElementById("box").value;
+  newItem.onclick = removeItem;
+  document.getElementById("list").appendChild(newItem);
+}
+
+// removeItem function:
+//   This will remove an item from the task list
+function removeItem(){
+  document.getElementById("list").removeChild(this);
+}
+
+</script>
+
+</body>
+</html>
